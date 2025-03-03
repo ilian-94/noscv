@@ -1,0 +1,138 @@
+/* Variables CSS */
+:root {
+    --primary-color: #d32f2f; /* Rouge principal */
+    --secondary-color: #b71c1c; /* Rouge foncé */
+    --background-color: #121212; /* Fond sombre */
+    --text-color: #ffffff; /* Texte blanc */
+    --btn-hover: #ff5252; /* Rouge plus clair au survol */
+    --transition-speed: 0.3s;
+}
+
+/* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Navigation */
+header {
+    background: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color var(--transition-speed);
+}
+
+nav a:hover {
+    color: var(--btn-hover);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* CV Sections */
+.cv-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cv-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cv-info h3 {
+    color: var(--btn-hover);
+    margin-bottom: 1rem;
+}
+
+.cv-info p {
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background var(--transition-speed);
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
